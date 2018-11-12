@@ -7,7 +7,7 @@ RUN curl -sSL https://github.com/openfaas-incubator/of-watchdog/releases/downloa
 
 WORKDIR /root/
 
-RUN echo "extension=http://swoole" | tee -a /usr/local/etc/php/conf.d/swoole.ini
+RUN echo "extension=swoole.so" | tee -a /usr/local/etc/php/conf.d/swoole.ini
 COPY function   function
 COPY index.php  index.php
 
