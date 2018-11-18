@@ -11,8 +11,8 @@ $http->on("start", function ($server) {
 $http->on("request", function ($request, $response) {
 
     // var_dump($request->rawContent());
-    // var_dump($request->header);
-    // var_dump($request->server);
+    var_dump($request->header);
+    var_dump($request->server);
     // echo $request->server['request_method'];
 
     // echo $request->server['request_uri'];
